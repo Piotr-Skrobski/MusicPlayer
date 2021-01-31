@@ -31,6 +31,7 @@ class MusicEngine():
                 MusicEngine.is_music_paused = True
             else:
                 pygame.mixer.music.unpause()
+                MusicEngine.is_music_paused = False
 
 
     def PlayMusic(self, loops = None):
